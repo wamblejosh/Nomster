@@ -29,7 +29,13 @@ body {
 
 .navbar {
   background: image_url('real_cf.png');
-  box-shadow: 0px 1px 3px #2a2a2a;  
+  box-shadow: 0px 1px 3px #2a2a2a !important;  
 }
 
-
+.navbar-inverse .navbar-brand {
+  color: green !important;
+  font-family: kaushan_scriptregular;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  font-size: 32px;
+}
