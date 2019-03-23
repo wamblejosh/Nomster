@@ -5,3 +5,5 @@
     <p><%= place.description %></p><br />
   </div>
 <% end %>
+
+<%= will_paginate @clients, list_classes: %w(pagination justify-content-end) %>
