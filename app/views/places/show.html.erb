@@ -6,7 +6,9 @@
   <p><%= @place.description %></p>
   <div class="float-right">
   	<br />
-    <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
-    <%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm: 'WARNING, are you sure you wish to purge this from existence?'},class: 'btn btn-danger'%>
+    <% if current_user && current_user == @place.user %>
+      <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
+      <%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm: 'WARNING, are you sure you wish to purge this from existence?'},class: 'btn btn-danger'%>
+    <% end %>
   </div> 
 </div>  
