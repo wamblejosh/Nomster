@@ -44,3 +44,22 @@ body {
 }
 
 
+.nav-color-green{
+  color: green !important;
+}
+
+.invalid-feedback {
+  color: red;
+  background-color: black;
+  border-radius: 3px;
+  padding: 2px 8 px 2 px 8 px;
+}
+
+a.nav-link {
+  color: green !important;
+}
+
+a.nav-link:hover {
+  text-decoration: underline;
+}
+
