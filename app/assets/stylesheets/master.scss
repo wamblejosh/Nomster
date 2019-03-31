@@ -20,7 +20,6 @@
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
-
 }
 
 body {
@@ -71,4 +70,48 @@ a.nav-link:hover {
 .clear {
   clear: both;
   
+}
+
+blockquote {
+  background: image_url('real_cf.png');
+  border-left: 10px solid green;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  color: green;
+}
+
+blockquote:before {
+  color: green;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.colorgreen {
+  color: green !important;
+  text-decoration: underline;
+}
+
+a:link {
+  color: green;
+}
+
+a:active {
+  color: green;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: green;
+  text-decoration: underline;
 }
