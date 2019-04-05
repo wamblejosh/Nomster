@@ -5,6 +5,8 @@ ruby '2.5.3'
 
 gem 'geocoder'
 gem 'figaro'
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2', '>= 5.2.2.1'

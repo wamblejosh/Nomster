@@ -2,8 +2,9 @@ class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :place
 
-  #validates :message, presence: true, length: { minimum: 3 } 
-  #validates :rating, presence: true
+
+  validates :message, presence: true, length: { minimum: 3 } 
+  validates :rating, presence: true
   RATINGS = {
   	'one star': '1_star',
   	'two stars': '2_stars',
