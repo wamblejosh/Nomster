@@ -9,6 +9,16 @@
       <small><%= place.user.email %></small>
      <% end %>
     
+
+     <% place.photos.each do |photo| %>
+     <img>
+     <%= image_tag photo.picture.url %>
+     </img>     
+     <br />
+     <%= photo.caption %>
+     <% end %>
+
+
   <% if place.comments.present? %>  
     <div class="col-12">
          <blockquote>
@@ -23,7 +33,8 @@
     </div>
 <% end %>
 </div>
-     
+
+
 
 
 <%= will_paginate @clients, list_classes: %w(pagination justify-content-end) %>
